@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container .card {
+  width: 350px;
+  height: auto;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0px 0px 7px hsl(215, 32%, 27%);
+  border: none;
+  padding: 1rem;
+}
+
+.container .card .card-img {
+  position: relative;
+}
+
+.container .card .card-img .card-img-view-bg {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%);
+  top: 0;
+  width: 100%;
+  height: 320px;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.container .card .card-img .card-img-view-bg:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.container .card .card-img .card-img-view-bg .images-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container .card .card-img .images-equilibrium {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.container .card .card-title {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.container .card .card-title h2 {
+  font-size: 24px;
+}
+
+.container .card .card-title h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.container .card .card-body .card-description p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.container .card .card-body .card-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.container .card .card-body .card-text .card-price {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.container .card .card-body .card-text .card-price img {
+  width: 10px;
+  height: 15px;
+}
+
+.container .card .card-body .card-text .card-price h4 {
+  color: hsl(178, 100%, 50%);
+}
+
+.container .card .card-body .card-text .card-time {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.container .card .card-body .card-text .card-time p {
+  color: hsl(215, 51%, 70%);
+}
+
+.container .card .card-body .card-text .card-time img {
+  width: 15px;
+  height: 15px;
+}
+
+.container .card .card-body .card-line {
+  border: 1px solid;
+  color: hsl(215, 51%, 70%);
+}
+
+.container .card .card-body .card-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.container .card .card-body .card-profile img {
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.container .card .card-body .card-profile p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+}
+
+.container .card .card-body .card-profile span {
+  color: white;
+}
+
+.container .card .card-body .card-profile span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  .container .card {
+    width: 300px;
+  }
+}
